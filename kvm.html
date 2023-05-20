@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>¿Que es KVM?</title>
+    <style>
+        /* Estilos CSS para la página de inicio */
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header {
+            text-align: center;
+            color: white;
+            background-image: url("resource/banner.png");
+            padding: 20px;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: row;
+            flex: 1;
+        }
+
+        .main-column {
+            flex: 3;
+            background-color: #fff;
+            padding: 20px;
+        }
+
+        .sidebar {
+            flex: 1;
+            background-color: #c7daf0;
+            padding: 20px;
+        }
+
+        footer {
+            color: white;
+            background-image: url("resource/banner.png");
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>¿QUE ES KVM?</h1>
+    </header>
+
+    <main class="container">
+        <aside class="main-column">
+
+            <h3>
+                ¿Qué son las KVM?
+            </h3>
+            <p>
+                Las máquinas virtuales basadas en el kernel (KVM) son una tecnología de virtualizaciónopen source
+                integrada a Linux®. Con ellas, puede transformar Linux en un hipervisor que permite que una máquina host
+                ejecute varios entornos virtuales aislados llamados máquinas virtuales (VM) o guests.
+                <br>
+                Las KVM forman parte de Linux. Por eso, si cuenta con una versión de Linux 2.6.20 o posterior, ya las
+                tiene a su disposición. Se anunciaron por primera vez en 2006, y un año después se incorporaron a la
+                versión principal del kernel de Linux. Dado que forman parte del código actual de Linux, reciben
+                inmediatamente todas las mejoras, las correcciones y las funciones nuevas de este sistema, sin requerir
+                ningún tipo de ingeniería adicional.
+            </p>
+            <h3>
+                Implementación de las KVM
+            </h3>
+            <p>
+                En resumen, debe ejecutar una versión de Linux que se haya lanzado después de 2007 e instalarla en
+                sistemas
+                de hardware X86 que admitan las funciones de virtualización. Si ya lo hizo, entonces solo debe cargar
+                dos
+                módulos actuales (uno del kernel del host y uno específico del procesador), un emulador y todos los
+                controladores necesarios para ejecutar sistemas adicionales.
+                <br>
+                Sin embargo, si las KVM se implementan en una distribución de Linux compatible, como Red Hat Enterprise
+                Linux, se amplían sus funciones, lo cual le permite intercambiar los recursos entre los guests,
+                compartir
+                las bibliotecas comunes, optimizar el rendimiento del sistema y mucho más.
+            </p>
+            <h3>
+                Funciones de las KVM
+            </h3>
+            <p>
+                KVM es parte de Linux, y viceversa. Ambas soluciones ofrecen las mismas características; sin embargo,
+                las KVM tienen algunas funciones específicas que las convierten en el hipervisor preferido de las
+                empresas.
+                <br>
+                Para mayor informacion puede dirigirse a:
+                <a href="https://www.redhat.com/es/topics/virtualization/what-is-KVM"
+                    target="_blank">
+                    red hat
+                </a>.
+            </p>
+        </aside>
+
+        <aside class="sidebar">
+            <nav>
+                <h3>Pagina Principal</h3>
+                <a href="index.html">
+                    Volver
+                </a>
+                a la pagina principal.
+            </nav>
+        </aside>
+    </main>
+
+    <footer align="center">
+        <B>Universidad Internacional de la Rioja</B>
+        <br>
+        <B>Asignatura:</B> Desarrollo de aplicaciones en red.
+        <br>
+        <B>Profesor:</B> Ing. Deivis Eduard Ramirez Martinez.
+        <br>
+        <B>Actividad:</B> Creacion de un Blog.
+        <br>
+        <B>Presentado por:</B> Miguel Fernando Mora Saenz.
+        <br>
+        <I>2023</I>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Registro al congreso</title>
+    <style>
+        /* Estilos CSS para la página de inicio */
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header {
+            text-align: center;
+            color: white;
+            background-image: url("resource/banner.png");
+            padding: 20px;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: row;
+            flex: 1;
+        }
+
+        .main-column {
+            flex: 3;
+            background-color: #fff;
+            padding: 20px;
+        }
+
+        .sidebar {
+            flex: 1;
+            background-color: #c7daf0;
+            padding: 20px;
+        }
+
+        input[type=text],
+        select {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #a8b2eb;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        button[type=submit] {
+            width: 100%;
+            background-color: #051768;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button[type=submit]:hover {
+            background-color: #526ad6;
+        }
+
+        .form {
+            border-radius: 5px;
+            background-color: #c7daf0;
+            padding: 20px;
+        }
+
+        footer {
+            color: white;
+            background-image: url("resource/banner.png");
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>REGISTRO AL CONGRESO INTERNACIONAL DE ESTUDIANTES DE INGENIERÍA INFORMÁTICA 2023</h1>
+    </header>
+    <main class="container">
+        <aside class="main-column">
+            <h3>Registro de Participantes:</h3>
+            <article class="form">
+                <form action="registrado.html">
+                    <label for="nombre">Nombre completo</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Nombre completo...">
+
+                    <label for="correo">Dirección de correo electrónico</label>
+                    <input type="text" id="correo" name="correo" placeholder="Correo electronico...">
+
+                    <label for="telefono">Número de teléfono</label>
+                    <input type="text" id="telefono" name="telefono" placeholder="Telefono...">
+
+                    <label for="ocupacion">Ocupacion</label>
+                    <input type="text" id="ocupacion" name="ocupacion" placeholder="Ocupacion...">
+
+                    <label for="categoria">Categoría de participación</label>
+                    <select id="categoria" name="categoria">
+                        <option value="">Seleccionar</option>
+                        <option value="Conferencia Introduccion a la virtualizacion">Conferencia Introduccion a la
+                            virtualizacion</option>
+                        <option value="Conferencia Virtualizacion On premise">Conferencia Virtualizacion On premise
+                        </option>
+                        <option value="Exposicion Dell servidores y storage">Exposicion Dell servidores y storage
+                        </option>
+                        <option value="Workshop Instalacion de KVM">Workshop Instalacion de KVM</option>
+                        <option value="Conferencia Azure, la nube de Microsoft">Conferencia Azure, la nube de Microsoft
+                        </option>
+                        <option value="Conferencia AWS, la nube de Amazon">Conferencia AWS, la nube de Amazon</option>
+                        <option value="Conferencia Nube Vs On Premise">Conferencia Nube Vs On Premise</option>
+                        <option value="Conocenos Acercamiento a reseller de nube">Conocenos Acercamiento a reseller de
+                            nube
+                        </option>
+                    </select>
+
+                    <button type="submit">
+                        Enviar formulario
+                    </button>
+                </form>
+            </article>
+        </aside>
+
+        <aside class="sidebar">
+            <nav>
+                <h3>Mi Información</h3>
+                Quieres saber mas acerca de mi,
+                <a href="info.html">
+                    ingresa aqui
+                </a>
+                , para mayor informacion.
+            </nav>
+
+            <nav>
+                <h3>Pagina Principal</h3>
+                <a href="index.html">
+                    Volver
+                </a>
+                a la pagina principal.
+            </nav>
+        </aside>
+    </main>
+
+    <footer align="center">
+        <B>Universidad Internacional de la Rioja</B>
+        <br>
+        <B>Asignatura:</B> Desarrollo de aplicaciones en red.
+        <br>
+        <B>Profesor:</B> Ing. Deivis Eduard Ramirez Martinez.
+        <br>
+        <B>Actividad:</B> Creacion de un Blog.
+        <br>
+        <B>Presentado por:</B> Miguel Fernando Mora Saenz.
+        <br>
+        <I>2023</I>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Principal</title>
+    <style>
+        /* Estilos CSS para la página de inicio */
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header {
+            text-align: center;
+            color: white;
+            background-image: url("resource/banner.png");
+            padding: 20px;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: row;
+            flex: 1;
+        }
+
+        .main-column {
+            flex: 3;
+            background-color: #fff;
+            padding: 20px;
+        }
+
+        .sidebar {
+            flex: 1;
+            background-color: #c7daf0;
+            padding: 20px;
+        }
+
+        .main-tittle,
+        .main-p {
+            text-align: center;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            text-align: center;
+        }
+
+        th,
+        td {
+            border: 1px solid #020347;
+            padding: 8px;
+        }
+
+        th {
+            color: white;
+            background-color: #051768;
+        }
+
+        td {
+            background-color: #c7daf0;
+        }
+
+        article {
+            padding: 20px;
+            border: 1px solid #051768;
+            border-radius: 4px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+
+        h2 {
+            margin-top: 0;
+        }
+
+        img {
+            max-width: 30%;
+            height: auto;
+            margin-right: 20px;
+        }
+
+        .description {
+            margin-top: 10px;
+        }
+
+        footer {
+            color: white;
+            background-image: url("resource/banner.png");
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>CONGRESO INTERNACIONAL DE ESTUDIANTES DE INGENIERÍA INFORMÁTICA 2023</h1>
+    </header>
+
+    <main class="container">
+        <aside class="main-column">
+            <h2 class="main-tittle">Información del Congreso Internacional de Estudiantes de Ingeniería Informática 2023:</h2>
+            <p class="main-p">Fecha: 27 de mayo de 2023 al 28 de mayo de 2023</p>
+            <p class="main-p">Lugar: CUR - Compensar - Bogotá D.C - Colombia</p>
+            <h2>Agenda:</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Fecha</th>
+                        <th>Hora</th>
+                        <th>Actividad</th>
+                        <th>Duración</th>
+                        <th>Expositor</th>
+                        <th>Aula</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Dia 1 - 1°  Actividad del congreso -->
+                    <tr>
+                        <td>27 de Mayo</td>
+                        <td>08:00 AM</td>
+                        <td>Conferencia: Introduccion a la virtualizacion</td>
+                        <td>2 Horas</td>
+                        <td>Raul Zambrano</td>
+                        <td>Teatro Almeida - 2° piso</td>
+                    </tr>
+                    <!-- Dia 1 - 2°  Actividad del congreso -->
+                    <tr>
+                        <td>27 de Mayo</td>
+                        <td>10:00 AM</td>
+                        <td>Conferencia: Virtualizacion On premise</td>
+                        <td>2 Horas</td>
+                        <td>Carlos Avenia</td>
+                        <td>Teatro Boreal - 3° piso</td>
+                    </tr>
+                    <!-- Dia 1 - 3°  Actividad del congreso -->
+                    <tr>
+                        <td>27 de Mayo</td>
+                        <td>02:00 PM</td>
+                        <td>Exposicion: Dell servidores y storage</td>
+                        <td>2 Horas</td>
+                        <td>Michael Fernandez</td>
+                        <td>Sala purpura - 2° piso</td>
+                    </tr>
+                    <!-- Dia 1 - 4°  Actividad del congreso -->
+                    <tr>
+                        <td>27 de Mayo</td>
+                        <td>04:00 PM</td>
+                        <td>Workshop: Instalacion de KVM</td>
+                        <td>2 Horas</td>
+                        <td>Arnulfo Zambrano</td>
+                        <td>Sala de computo A - 3° piso</td>
+                    </tr>
+                    <!-- Dia 2 - 1°  Actividad del congreso -->
+                    <tr>
+                        <td>28 de Mayo</td>
+                        <td>08:00 AM</td>
+                        <td>Conferencia: Azure, la nube de Microsoft</td>
+                        <td>2 Horas</td>
+                        <td>Yuliana Hernandez</td>
+                        <td>Teatro Almeida - 2° piso</td>
+                    </tr>
+                    <!-- Dia 2 - 2°  Actividad del congreso -->
+                    <tr>
+                        <td>28 de Mayo</td>
+                        <td>10:00 AM</td>
+                        <td>Conferencia: AWS, la nube de Amazon</td>
+                        <td>2 Horas</td>
+                        <td>Diana Cifuentes</td>
+                        <td>Teatro Boreal - 3° piso</td>
+                    </tr>
+                    <!-- Dia 2 - 3°  Actividad del congreso -->
+                    <tr>
+                        <td>28 de Mayo</td>
+                        <td>02:00 PM</td>
+                        <td>Conferencia: Nube Vs On Premise</td>
+                        <td>2 Horas</td>
+                        <td>Johanna Romo</td>
+                        <td>Teatro Almeida - 2° piso</td>
+                    </tr>
+                    <!-- Dia 2 - 4°  Actividad del congreso -->
+                    <tr>
+                        <td>28 de Mayo</td>
+                        <td>04:00 PM</td>
+                        <td>Conocenos: Acercamiento a reseller de nube</td>
+                        <td>2 Horas</td>
+                        <td>DB System, SETI, Indra</td>
+                        <td>Teatro Boreal - 3° piso</td>
+                    </tr>
+                </tbody>
+            </table>
+            <br>
+            <h2>Entradas anteriores: </h2>
+            <article>
+                <img src="resource/linux-kvm.png" alt="Linux KVM">
+                <nav>
+                    <h2>¿Que es KVM?</h2>
+                    <p class="description">Las máquinas virtuales basadas en el kernel (KVM) son una tecnología de
+                        virtualizaciónopen source integrada a Linux®. Con ellas, puede transformar Linux en un
+                        hipervisor que permite que una máquina host ejecute...
+                        <a href="kvm.html">
+                            leer mas...
+                        </a>
+                    </p>
+                </nav>
+            </article>
+            <br>
+            <article>
+                <img src="resource/HyperV.png" alt="Windows Server Hyer-V">
+                <nav>
+                    <h2>Información general sobre la tecnología Hyper-V</h2>
+                    <p class="description">Hyper-V es el producto de virtualización de hardware de Microsoft. Le permite 
+                        crear y ejecutar una versión de software de un...
+                        <a href="hyperv.html">
+                            leer mas...
+                        </a>
+                    </p>
+                </nav>
+            </article>
+        </aside>
+
+        <aside class="sidebar">
+            <nav>
+                <h3>Mi Información</h3>
+                Quieres saber mas acerca de mi,
+                <a href="info.html">
+                    ingresa aqui
+                </a>
+                , para mayor informacion.
+            </nav>
+
+            <nav>
+                <h3>Registro de Participantes</h3>
+                Para participar en un evento de la agenda procede a
+                <a href="registro.html">
+                    registrate aqui
+                </a>
+                .
+            </nav>
+        </aside>
+    </main>
+
+    <footer align="center">
+        <B>Universidad Internacional de la Rioja</B>
+        <br>
+        <B>Asignatura:</B> Desarrollo de aplicaciones en red.
+        <br>
+        <B>Profesor:</B> Ing. Deivis Eduard Ramirez Martinez.
+        <br>
+        <B>Actividad:</B> Creacion de un Blog.
+        <br>
+        <B>Presentado por:</B> Miguel Fernando Mora Saenz.
+        <br>
+        <I>2023</I>
+    </footer>
+</body>
+
+</html>
